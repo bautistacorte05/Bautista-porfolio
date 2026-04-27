@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bautista Corte — Desarrollador Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">BC</a>
+      <ul class="nav-links">
+        <li class="nav-item grad-purple"><a href="#sobre-mi">Sobre mí</a></li>
+        <li class="nav-item grad-blue"><a href="#habilidades">Habilidades</a></li>
+        <li class="nav-item grad-orange"><a href="#proyectos">Proyectos</a></li>
+        <li class="nav-item grad-green"><a href="#experiencia">Experiencia</a></li>
+        <li class="nav-item grad-pink"><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- WEBGL SHADER BACKGROUND -->
+  <canvas id="shader-canvas"></canvas>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hola, soy</p>
+      <h1 class="hero-name">Bautista Corte</h1>
+      <h2 class="hero-title">Desarrollador Web <span class="accent">Junior</span> & <span class="accent">AI Tools</span></h2>
+      <p class="hero-desc">
+        Tengo 26 años, soy de La Plata, Argentina. Combino desarrollo web con el uso de herramientas de inteligencia artificial para construir soluciones digitales modernas, rápidas y efectivas. Busco clientes freelance para ayudar a crecer su presencia online.
+      </p>
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn btn-grad grad-orange">Ver Proyectos</a>
+        <a href="#contacto" class="btn btn-grad grad-purple">Contactame</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section class="section" id="sobre-mi">
+    <div class="container">
+      <h2 class="section-title">Sobre <span class="accent">mí</span></h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-placeholder">
+            <i class="fas fa-user"></i>
+            <p>Tu foto aquí</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            Soy un desarrollador web junior apasionado por la tecnología, con base en La Plata, Buenos Aires.
+            A lo largo de mi carrera combiné experiencia en redes sociales y administración con el aprendizaje
+            continuo de desarrollo web y herramientas de inteligencia artificial.
+          </p>
+          <p>
+            Me especializo en crear sitios web y landing pages modernas, optimizadas y listas para convertir
+            visitantes en clientes. Uso IA como herramienta de trabajo diario para entregar resultados de
+            mayor calidad en menos tiempo.
+          </p>
+          <p>
+            Hoy busco consolidarme como freelancer, trabajando con emprendedores, pymes y profesionales
+            que necesitan presencia digital efectiva.
+          </p>
+          <div class="about-badges">
+            <span class="badge"><i class="fas fa-map-marker-alt"></i> La Plata, Argentina</span>
+            <span class="badge"><i class="fas fa-briefcase"></i> Disponible para proyectos</span>
+            <span class="badge"><i class="fas fa-dollar-sign"></i> Acepto pago en USD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="section section-dark" id="habilidades">
+    <div class="container">
+      <h2 class="section-title">Mis <span class="accent">Habilidades</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h3>HTML & CSS</h3>
+          <p>Maquetado semántico, responsive design, animaciones CSS.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+          <h3>JavaScript</h3>
+          <p>Interactividad, DOM, lógica frontend y scripts de automatización.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <h3>React</h3>
+          <p>Componentes reutilizables, SPAs y proyectos con estado dinámico.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h3>Bases de Datos</h3>
+          <p>Integración con bases de datos para aplicaciones web completas.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-robot"></i></div>
+          <h3>Herramientas IA</h3>
+          <p>ChatGPT, Claude, Cursor y más. La IA como palanca de productividad.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-share-alt"></i></div>
+          <h3>Redes Sociales</h3>
+          <p>Gestión de contenido, comunidades y estrategia digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <h2 class="section-title">Mis <span class="accent">Proyectos</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder"><i class="fas fa-futbol"></i></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Atlético Moro</h3>
+            <p>Sitio web para club de fútbol amateur. Incluye fixture, resultados, plantel y estadísticas de los jugadores.</p>
+            <div class="project-links">
+              <a href="https://web-ten-coral-98.vercel.app/" target="_blank" class="btn btn-sm">
+                <i class="fas fa-external-link-alt"></i> Ver sitio
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder"><i class="fas fa-hard-hat"></i></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Landing Page</span>
+            </div>
+            <h3>Constructora de Aluminio</h3>
+            <p>Landing page para empresa constructora especializada en aberturas de aluminio. Diseño profesional orientado a la captación de clientes.</p>
+            <div class="project-links">
+              <span class="btn btn-sm btn-ghost"><i class="fas fa-lock"></i> Privado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder"><i class="fas fa-brain"></i></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Landing Page</span>
+            </div>
+            <h3>Perfil Psicóloga</h3>
+            <p>Sitio web personal para profesional de la psicología. Presentación de servicios, enfoque terapéutico y formulario de contacto.</p>
+            <div class="project-links">
+              <span class="btn btn-sm btn-ghost"><i class="fas fa-lock"></i> Privado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder"><i class="fas fa-chart-line"></i></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Base de Datos</span>
+              <span class="tag">Full Stack</span>
+            </div>
+            <h3>App Finanzas Personales</h3>
+            <p>Aplicación web para gestión de finanzas personales. Registro de ingresos y gastos, visualización de datos y base de datos integrada.</p>
+            <div class="project-links">
+              <span class="btn btn-sm btn-ghost"><i class="fas fa-lock"></i> Privado</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="section section-dark" id="experiencia">
+    <div class="container">
+      <h2 class="section-title">Mi <span class="accent">Experiencia</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2025 — Actualidad</div>
+            <h3>Administrativo & Redes Sociales</h3>
+            <h4>Skay Gym</h4>
+            <p>Gestión administrativa del gimnasio y manejo de redes sociales. Creación de contenido, atención al cliente y organización operativa del negocio.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2019 — 2025 · 6 años</div>
+            <h3>Community Manager & Redes Sociales</h3>
+            <h4>Vivero Green Bell</h4>
+            <p>Gestión integral de redes sociales del vivero durante 6 años. Creación de contenido, estrategia digital, crecimiento de comunidad y comunicación con clientes.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <h2 class="section-title">Hablemos <span class="accent">:)</span></h2>
+      <p class="contact-subtitle">Estoy disponible para proyectos freelance. Si tenés una idea, un negocio que digitalizar o una web que mejorar, escribime.</p>
+      <div class="contact-cards">
+        <a href="mailto:bautistacorte05@gmail.com" class="contact-card grad-orange">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">bautistacorte05@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/bautista-corte" target="_blank" class="contact-card grad-blue">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Bautista Corte</span>
+          </div>
+        </a>
+        <a href="https://wa.me/542215998927" target="_blank" class="contact-card contact-card-whatsapp grad-green">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-value">Bautista Corte</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/542215998927" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Bautista Corte — Desarrollado con <span class="accent">♥</span> en La Plata, Argentina</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="module">
+    import { initShader } from "./shader.js"
+    initShader(document.getElementById("shader-canvas"))
+  </script>
+</body>
+</html>
