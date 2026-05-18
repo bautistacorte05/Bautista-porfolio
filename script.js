@@ -18,7 +18,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // Scroll reveal animation
 const revealElements = document.querySelectorAll(
-  '.skill-card, .project-card, .timeline-item, .about-grid, .contact-card, .cert-card'
+  '.skill-card, .project-card, .service-card, .timeline-item, .about-grid, .contact-card, .cert-card'
 );
 
 revealElements.forEach(el => el.classList.add('reveal'));
