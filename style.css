@@ -138,6 +138,7 @@ body {
 .grad-green  { --g-from: #80FF72; --g-to: #7EE8FA; }
 .grad-pink   { --g-from: #ffa9c6; --g-to: #f434e2; }
 .grad-gold   { --g-from: #f7971e; --g-to: #ffd200; }
+.grad-teal   { --g-from: #43e97b; --g-to: #38f9d7; }
 
 .nav-item.grad-gold::before,
 .nav-item.grad-gold::after {
@@ -371,24 +372,13 @@ body {
   align-items: start;
 }
 
-.photo-placeholder {
+.about-img {
   width: 100%;
   aspect-ratio: 1;
-  background: var(--bg-card);
-  border: 2px dashed var(--border);
+  object-fit: cover;
+  object-position: center 15%;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-}
-
-.photo-placeholder i {
-  font-size: 3rem;
-  color: var(--border);
+  display: block;
 }
 
 .about-text p {
@@ -459,6 +449,102 @@ body {
   line-height: 1.6;
 }
 
+/* ===== SERVICES ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-card-featured {
+  border-color: rgba(99, 102, 241, 0.45);
+}
+
+.service-card-featured:hover {
+  border-color: var(--accent);
+}
+
+.service-badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(45deg, var(--g-from), var(--g-to));
+}
+
+.service-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.service-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.service-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.service-features li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-features li i {
+  color: var(--accent);
+  font-size: 0.7rem;
+  min-width: 12px;
+}
+
 /* ===== PROJECTS ===== */
 .projects-grid {
   display: grid;
@@ -488,6 +574,24 @@ body {
   font-size: 3.5rem;
   color: var(--accent);
   opacity: 0.6;
+}
+
+.project-img {
+  overflow: hidden;
+  height: 180px;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.04);
 }
 
 .project-info {

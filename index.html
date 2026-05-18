@@ -3,8 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bautista Corte — Desarrollador Web</title>
-  <link rel="stylesheet" href="style.css?v=6" />
+  <title>Bautista Corte — Desarrollador Web & Especialista IA | Freelance</title>
+  <meta name="description" content="Desarrollador web freelance en La Plata, Argentina. Creo sitios web, landing pages y aplicaciones modernas para emprendedores y pymes. Combino desarrollo con herramientas de IA para entregar resultados rápidos y efectivos." />
+  <meta name="author" content="Bautista Corte" />
+  <meta name="keywords" content="desarrollador web freelance, landing page, sitio web, Argentina, La Plata, React, JavaScript, IA" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bautista Corte — Desarrollador Web Freelance" />
+  <meta property="og:description" content="Creo sitios web y landing pages modernos para emprendedores y pymes. Combino desarrollo web con herramientas de IA para resultados rápidos y efectivos." />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bautista Corte — Desarrollador Web Freelance" />
+  <meta name="twitter:description" content="Creo sitios web y landing pages modernos para emprendedores y pymes en Argentina." />
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='68' font-family='Inter,sans-serif' font-size='44' font-weight='800' text-anchor='middle' fill='white'>BC</text></svg>" />
+
+  <link rel="stylesheet" href="style.css?v=9" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -17,6 +35,7 @@
       <ul class="nav-links">
         <li class="nav-item grad-purple"><a href="#sobre-mi">Sobre mí</a></li>
         <li class="nav-item grad-blue"><a href="#habilidades">Habilidades</a></li>
+        <li class="nav-item grad-teal"><a href="#servicios">Servicios</a></li>
         <li class="nav-item grad-orange"><a href="#proyectos">Proyectos</a></li>
         <li class="nav-item grad-green"><a href="#experiencia">Experiencia</a></li>
         <li class="nav-item grad-gold"><a href="#certificaciones">Certificaciones</a></li>
@@ -37,7 +56,7 @@
     <div class="hero-content">
       <p class="hero-greeting">Hola, soy</p>
       <h1 class="hero-name">Bautista Corte</h1>
-      <h2 class="hero-title">Desarrollador Web <span class="accent">Junior</span> & <span class="accent">AI Tools</span></h2>
+      <h2 class="hero-title">Desarrollador Web <span class="accent">Freelance</span> & <span class="accent">AI Tools</span></h2>
       <p class="hero-desc">
         Tengo 26 años, soy de La Plata, Argentina. Combino desarrollo web con el uso de herramientas de inteligencia artificial para construir soluciones digitales modernas, rápidas y efectivas. Busco clientes freelance para ayudar a crecer su presencia online.
       </p>
@@ -57,14 +76,11 @@
       <h2 class="section-title">Sobre <span class="accent">mí</span></h2>
       <div class="about-grid">
         <div class="about-photo">
-          <div class="photo-placeholder">
-            <i class="fas fa-user"></i>
-            <p>Tu foto aquí</p>
-          </div>
+          <img src="imgs/bautista.jpg" alt="Bautista Corte" class="about-img" />
         </div>
         <div class="about-text">
           <p>
-            Soy un desarrollador web junior apasionado por la tecnología, con base en La Plata, Buenos Aires.
+            Soy un desarrollador web apasionado por la tecnología, con base en La Plata, Buenos Aires.
             A lo largo de mi carrera combiné experiencia en redes sociales y administración con el aprendizaje
             continuo de desarrollo web y herramientas de inteligencia artificial.
           </p>
@@ -126,6 +142,58 @@
     </div>
   </section>
 
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <h2 class="section-title">Mis <span class="accent">Servicios</span></h2>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon grad-orange"><i class="fas fa-rocket"></i></div>
+          <h3>Landing Page</h3>
+          <p class="service-price">USD 100 — 200</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Diseño a medida y responsive</li>
+            <li><i class="fas fa-check"></i> Formulario de contacto</li>
+            <li><i class="fas fa-check"></i> SEO básico incluido</li>
+            <li><i class="fas fa-check"></i> Entrega en 5-7 días</li>
+          </ul>
+          <a href="https://wa.me/542215998927" target="_blank" rel="noopener noreferrer" class="btn btn-grad grad-orange">Consultar por WhatsApp</a>
+        </div>
+
+        <div class="service-card service-card-featured reveal">
+          <span class="service-badge">Más elegido</span>
+          <div class="service-icon grad-purple"><i class="fas fa-laptop-code"></i></div>
+          <h3>Sitio Web Completo</h3>
+          <p class="service-price">USD 200 — 400</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Múltiples secciones</li>
+            <li><i class="fas fa-check"></i> Galería de trabajos o productos</li>
+            <li><i class="fas fa-check"></i> Integración con redes sociales</li>
+            <li><i class="fas fa-check"></i> SEO optimizado</li>
+            <li><i class="fas fa-check"></i> Entrega en 10-14 días</li>
+          </ul>
+          <a href="https://wa.me/542215998927" target="_blank" rel="noopener noreferrer" class="btn btn-grad grad-purple">Consultar por WhatsApp</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon grad-teal"><i class="fas fa-store"></i></div>
+          <h3>Tienda Online</h3>
+          <p class="service-price">USD 400 — 700</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Catálogo de productos</li>
+            <li><i class="fas fa-check"></i> Carrito de compras</li>
+            <li><i class="fas fa-check"></i> Panel de administración</li>
+            <li><i class="fas fa-check"></i> Integración de pagos</li>
+            <li><i class="fas fa-check"></i> Entrega en 20-30 días</li>
+          </ul>
+          <a href="https://wa.me/542215998927" target="_blank" rel="noopener noreferrer" class="btn btn-grad grad-teal">Consultar por WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- PROYECTOS -->
   <section class="section" id="proyectos">
     <div class="container">
@@ -134,7 +202,7 @@
 
         <div class="project-card">
           <div class="project-img">
-            <div class="project-placeholder"><i class="fas fa-futbol"></i></div>
+            <img src="imgs/atletico-moro.png" alt="Atlético Moro" loading="lazy" />
           </div>
           <div class="project-info">
             <div class="project-tags">
@@ -145,16 +213,14 @@
             <h3>Atlético Moro</h3>
             <p>Sitio web para club de fútbol amateur. Incluye fixture, resultados, plantel y estadísticas de los jugadores.</p>
             <div class="project-links">
-              <a href="https://atletico-moro.vercel.app/" target="_blank" class="btn btn-sm">
-                <i class="fas fa-external-link-alt"></i> Ver sitio
-              </a>
+              <a href="https://atletico-moro.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-grad grad-orange"><i class="fas fa-external-link-alt"></i> Ver Proyecto</a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-img">
-            <div class="project-placeholder"><i class="fas fa-hard-hat"></i></div>
+            <img src="imgs/aluminios.png" alt="Constructora de Aluminio" loading="lazy" />
           </div>
           <div class="project-info">
             <div class="project-tags">
@@ -165,14 +231,14 @@
             <h3>Constructora de Aluminio</h3>
             <p>Landing page para empresa constructora especializada en aberturas de aluminio. Diseño profesional orientado a la captación de clientes.</p>
             <div class="project-links">
-              <span class="btn btn-sm btn-ghost"><i class="fas fa-lock"></i> Privado</span>
+              <a href="https://aluminios-leo.vercel.app/#beneficios" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-grad grad-orange"><i class="fas fa-external-link-alt"></i> Ver Proyecto</a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-img">
-            <div class="project-placeholder"><i class="fas fa-brain"></i></div>
+            <img src="imgs/lu-psico.png" alt="Perfil Psicóloga" loading="lazy" />
           </div>
           <div class="project-info">
             <div class="project-tags">
@@ -190,7 +256,7 @@
 
         <div class="project-card">
           <div class="project-img">
-            <div class="project-placeholder"><i class="fas fa-chart-line"></i></div>
+            <img src="imgs/finanzas.png" alt="App Finanzas Personales" loading="lazy" />
           </div>
           <div class="project-info">
             <div class="project-tags">
@@ -246,7 +312,7 @@
       <h2 class="section-title">Mis <span class="accent">Certificaciones</span></h2>
       <div class="certs-grid">
 
-        <a href="certs/DesarrolloWeb.png" target="_blank" class="cert-card grad-blue">
+        <a href="certs/DesarrolloWeb.png" target="_blank" rel="noopener noreferrer" class="cert-card grad-blue">
           <div class="cert-img-wrapper">
             <img src="certs/DesarrolloWeb.png" alt="Certificado Desarrollo Web" class="cert-img" />
           </div>
@@ -255,7 +321,7 @@
           </div>
         </a>
 
-        <a href="certs/ReactJs.png" target="_blank" class="cert-card grad-purple">
+        <a href="certs/ReactJs.png" target="_blank" rel="noopener noreferrer" class="cert-card grad-purple">
           <div class="cert-img-wrapper">
             <img src="certs/ReactJs.png" alt="Certificado React JS" class="cert-img" />
           </div>
@@ -264,7 +330,7 @@
           </div>
         </a>
 
-        <a href="certs/Backend1.pdf" target="_blank" class="cert-card grad-orange">
+        <a href="certs/Backend1.pdf" target="_blank" rel="noopener noreferrer" class="cert-card grad-orange">
           <div class="cert-img-wrapper">
             <img src="certs/Backend1.png" alt="Certificado Backend I" class="cert-img" />
           </div>
@@ -290,14 +356,14 @@
             <span class="contact-value">bautistacorte05@icloud.com</span>
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/bautista-corte-8a246834a/?skipRedirect=true" target="_blank" class="contact-card grad-blue">
+        <a href="https://www.linkedin.com/in/bautista-corte-8a246834a/" target="_blank" rel="noopener noreferrer" class="contact-card grad-blue">
           <i class="fab fa-linkedin"></i>
           <div>
             <span class="contact-label">LinkedIn</span>
             <span class="contact-value">Bautista Corte</span>
           </div>
         </a>
-        <a href="https://wa.me/542215998927" target="_blank" class="contact-card contact-card-whatsapp grad-green">
+        <a href="https://wa.me/542215998927" target="_blank" rel="noopener noreferrer" class="contact-card contact-card-whatsapp grad-green">
           <i class="fab fa-whatsapp"></i>
           <div>
             <span class="contact-label">WhatsApp</span>
@@ -309,16 +375,16 @@
   </section>
 
   <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/542215998927" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/542215998927" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 Bautista Corte — Desarrollado con <span class="accent">♥</span> en La Plata, Argentina</p>
+    <p>© 2026 Bautista Corte — Desarrollado con <span class="accent">♥</span> en La Plata, Argentina</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
   <script type="module">
     import { initShader } from "./shader.js"
     initShader(document.getElementById("shader-canvas"))
