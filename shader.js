@@ -90,12 +90,22 @@ export function initShader(canvas) {
     animId = requestAnimationFrame(animate)
   }
 
+  const handleVisibility = () => {
+    if (document.hidden) {
+      cancelAnimationFrame(animId)
+    } else {
+      animate()
+    }
+  }
+
   animate()
   window.addEventListener("resize", handleResize)
+  document.addEventListener("visibilitychange", handleVisibility)
 
   return () => {
     cancelAnimationFrame(animId)
     window.removeEventListener("resize", handleResize)
+    document.removeEventListener("visibilitychange", handleVisibility)
     scene.remove(mesh)
     geometry.dispose()
     material.dispose()
