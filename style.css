@@ -750,6 +750,7 @@ body {
 .cert-card.grad-blue:hover   { box-shadow: 0 0 0 1.5px #56CCF2, 0 12px 36px rgba(86, 204, 242, 0.3); }
 .cert-card.grad-purple:hover { box-shadow: 0 0 0 1.5px #a955ff, 0 12px 36px rgba(169, 85, 255, 0.3); }
 .cert-card.grad-orange:hover { box-shadow: 0 0 0 1.5px #FF9966, 0 12px 36px rgba(255, 153, 102, 0.3); }
+.cert-card.grad-green:hover  { box-shadow: 0 0 0 1.5px #80FF72, 0 12px 36px rgba(128, 255, 114, 0.3); }
 
 .cert-img-wrapper {
   overflow: hidden;
