@@ -28,7 +28,15 @@ const fragmentShader = `
     float g = 0.05 / abs(p.y + sin((gx + time) * xScale) * yScale);
     float b = 0.05 / abs(p.y + sin((bx + time) * xScale) * yScale);
 
-    gl_FragColor = vec4(r, g, b, 1.0);
+    // Tinte ámbar (#ffb547): línea central ámbar + leve desfase naranja más profundo
+    vec3 amber = vec3(1.0, 0.71, 0.28);
+    vec3 deepOrange = vec3(1.0, 0.45, 0.12);
+    // Compresión suave de la intensidad para que el núcleo no se lave a blanco
+    float gi = 1.0 - exp(-g * 0.8);
+    float oi = 1.0 - exp(-(r + b) * 0.15);
+    vec3 col = amber * gi * 0.85 + deepOrange * oi * 0.25;
+
+    gl_FragColor = vec4(col, 1.0);
   }
 `
 
