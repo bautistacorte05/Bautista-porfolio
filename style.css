@@ -12,6 +12,7 @@ html {
 :root {
   --accent: #6366f1;
   --accent-hover: #4f46e5;
+  --accent-text: #818cf8;
   --bg: #0d0d0f;
   --bg-dark: #09090b;
   --bg-card: #18181b;
@@ -35,7 +36,7 @@ body {
 }
 
 .accent {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .container {
@@ -73,7 +74,7 @@ body {
 .nav-logo {
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
   letter-spacing: -0.5px;
 }
@@ -203,7 +204,7 @@ body {
 
 .hero-greeting {
   font-size: 1rem;
-  color: var(--accent);
+  color: var(--accent-text);
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -279,7 +280,7 @@ body {
 .btn-primary:hover {
   background: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .btn-secondary {
@@ -290,7 +291,7 @@ body {
 
 .btn-secondary:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent-text);
   transform: translateY(-2px);
 }
 
@@ -408,7 +409,7 @@ body {
 }
 
 .badge i {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 /* ===== SKILLS ===== */
@@ -433,12 +434,12 @@ body {
 
 .skill-icon {
   font-size: 2rem;
-  color: var(--accent);
+  color: var(--accent-text);
   margin-bottom: 16px;
 }
 
 .skill-card h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -496,29 +497,28 @@ body {
   white-space: nowrap;
 }
 
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .service-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: white;
   background: linear-gradient(45deg, var(--g-from), var(--g-to));
 }
 
 .service-card h3 {
-  font-size: 1.15rem;
+  font-size: 1.375rem;
   font-weight: 700;
-}
-
-.service-price {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--accent);
-  letter-spacing: -0.5px;
-  margin: 0;
 }
 
 .service-features {
@@ -540,7 +540,7 @@ body {
 }
 
 .service-features li i {
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 0.7rem;
   min-width: 12px;
 }
@@ -572,7 +572,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 3.5rem;
-  color: var(--accent);
+  color: var(--accent-text);
   opacity: 0.6;
 }
 
@@ -607,7 +607,7 @@ body {
 
 .tag {
   background: rgba(99, 102, 241, 0.12);
-  color: var(--accent);
+  color: var(--accent-text);
   border: 1px solid rgba(99, 102, 241, 0.25);
   padding: 4px 10px;
   border-radius: 999px;
@@ -616,7 +616,7 @@ body {
 }
 
 .project-info h3 {
-  font-size: 1.1rem;
+  font-size: 1.375rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -669,7 +669,6 @@ body {
   background: var(--accent);
   border-radius: 50%;
   border: 3px solid var(--bg-dark);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
 }
 
 .timeline-content {
@@ -682,20 +681,20 @@ body {
 .timeline-date {
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-text);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
 
 .timeline-content h3 {
-  font-size: 1.1rem;
+  font-size: 1.375rem;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
 .timeline-content h4 {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   font-weight: 500;
   margin-bottom: 12px;
@@ -747,10 +746,10 @@ body {
 
 .cert-card:hover::before { opacity: 0.18; }
 
-.cert-card.grad-blue:hover   { box-shadow: 0 0 0 1.5px #56CCF2, 0 12px 36px rgba(86, 204, 242, 0.3); }
-.cert-card.grad-purple:hover { box-shadow: 0 0 0 1.5px #a955ff, 0 12px 36px rgba(169, 85, 255, 0.3); }
-.cert-card.grad-orange:hover { box-shadow: 0 0 0 1.5px #FF9966, 0 12px 36px rgba(255, 153, 102, 0.3); }
-.cert-card.grad-green:hover  { box-shadow: 0 0 0 1.5px #80FF72, 0 12px 36px rgba(128, 255, 114, 0.3); }
+.cert-card.grad-blue:hover   { border-color: #56CCF2; box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35); }
+.cert-card.grad-purple:hover { border-color: #a955ff; box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35); }
+.cert-card.grad-orange:hover { border-color: #FF9966; box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35); }
+.cert-card.grad-green:hover  { border-color: #80FF72; box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35); }
 
 .cert-img-wrapper {
   overflow: hidden;
@@ -776,7 +775,7 @@ body {
 }
 
 .cert-info h3 {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.3px;
   color: var(--text);
@@ -878,14 +877,14 @@ body {
   justify-content: center;
   font-size: 1.6rem;
   z-index: 200;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s, box-shadow 0.2s;
   text-decoration: none;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.12);
-  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.65);
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.5);
 }
 
 .whatsapp-float::before {
@@ -905,7 +904,7 @@ body {
 
 .contact-card i {
   font-size: 1.6rem;
-  color: var(--accent);
+  color: var(--accent-text);
   min-width: 28px;
 }
 
