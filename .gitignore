@@ -14,6 +14,8 @@
 # Playwright CLI output (may contain credentials)
 .playwright-cli/
 
-# Claude Code local tooling (machine-specific, not site content)
-.impeccable/hook.cache.json
-.impeccable/config.local.json
+# Herramientas y notas locales (no son parte del sitio)
+.impeccable/
+CLAUDE.md
+PRODUCT.md
+abrir-portafolio.command
